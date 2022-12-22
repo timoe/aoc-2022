@@ -17,35 +17,9 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
-use std::fs::File;
-use std::io::{BufRead, BufReader};
+
+mod one;
 
 fn main() {
-    one_one();
-}
-
-fn one_one() {
-    let file = File::open("./1/1-input").unwrap();
-    let reader = BufReader::new(file);
-
-    let mut calories = 0;
-    let mut max_calories = 0;
-    let mut elve = 1;
-    let mut max_elve = 1;
-    for line in reader.lines() {
-        let line = line.unwrap();
-
-        if line.eq("") {
-            if calories > max_calories {
-                max_calories = calories;
-                max_elve = elve;
-            }
-            calories = 0;
-            elve = elve + 1;
-        } else {
-            calories += line.parse::<i64>().unwrap();
-        }
-    }
-
-    println!("max cals {}, max elve {}", max_calories, max_elve)
+    one::day1();
 }
