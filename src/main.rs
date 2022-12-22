@@ -19,7 +19,12 @@
 // DEALINGS IN THE SOFTWARE.
 
 mod one;
+mod two;
 
 fn main() {
-    one::day1();
+    one::_day1();
+    println!("------");
+
+    two::_day2();
+    println!("------");
 }

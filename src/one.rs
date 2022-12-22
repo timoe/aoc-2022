@@ -21,8 +21,11 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-pub fn day1() {
+pub fn _day1() {
+    println!("Day 1 - 1");
     _one_one();
+
+    println!("Day 1 - 2");
     _one_two();
 }
 
