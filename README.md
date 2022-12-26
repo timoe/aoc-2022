@@ -12,3 +12,6 @@ Solving [advent of code 2022](https://adventofcode.com/2022), this time with `#R
 
 ## Day 2
 [Playing Rock-Paper-Scissors](src/two.rs)
+
+## Day 3
+[Calculation Priorities](src/three.rs)
